@@ -64,7 +64,7 @@ Pertemuan8/
 
 ## Bukti Pengerjaan
 
-- **Tampilan Desktop:** ![Desktop](img\dekstop.png)
+- **Tampilan Desktop:** ![Desktop](./img/dekstop.png)
 - **Tampilan Mobile:**
 - ![Mobile 1](./img/mobile1.png)
 - ![Mobile 2](./img/mobile2.png)
