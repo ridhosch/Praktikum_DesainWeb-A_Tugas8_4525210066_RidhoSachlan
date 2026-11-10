@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Event Seminar IT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head> 
+<body>
+
+<div class="container">
+    <h2>Form Registrasi Seminar</h2>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        
+        <label for="nama">Nama Lengkap *</label>
+        <input type="text" id="nama" name="nama" minlength="3" maxlength="50" placeholder="contoh : ridho" required>
+
+        <label for="nim">NPM*</label>
+        <input type="text" id="nim" name="nim" pattern="[0-9]{10}" maxlength="10" placeholder="contoh: 4525210066" required>
+
+        <label for="program-studi">Program Studi *</label>
+        <select id="program-studi" name="program_studi" required>
+            <option value="">Pilih Program Studi</option>
+            <option value="informatika">Teknik Informatika</option>
+            <option value="sistem_informasi">Sistem Informasi</option>
+            <option value="teknik_industri">Teknik Industri</option>
+            <option value="teknik_elektro">Teknik Elektro</option>
+        </select>
+
+        <!-- Radio Button -->
+        <fieldset class="radio-group">
+            <legend>Jenis Peserta *</legend>
+            <input type="radio" id="reguler" name="jenis_peserta" value="reguler" required>
+            <label for="reguler">Mahasiswa Reguler</label>
+            <input type="radio" id="umum" name="jenis_peserta" value="umum">
+            <label for="umum">Peserta Umum</label>
+        </fieldset>
+
+        <!-- Checkbox -->
+        <fieldset class="checkbox-group">
+            <legend>Topik yang Diminati (Pilih minimal 1)</legend>
+            <input type="checkbox" id="web" name="minat[]" value="web">
+            <label for="web">Web Development</label>
+            <input type="checkbox" id="ai" name="minat[]" value="ai">
+            <label for="ai">Artificial Intelligence</label>
+            <input type="checkbox" id="data" name="minat[]" value="data">
+            <label for="data">Data Science</label>
+        </fieldset>
+
+        <!-- Textarea dengan Validasi minlength dan maxlength -->
+        <label for="alasan">Alasan Mengikuti Kegiatan*</label>
+        <textarea id="alasan" name="alasan" rows="4" minlength="20" maxlength="300" placeholder="Tuliskan alasan Anda mengikuti seminar" required></textarea>
+
+        <!-- File Upload dengan Validasi accept PDF -->
+        <label for="cv">Upload CV / Berkas Pendukung (Format PDF) *</label>
+        <input type="file" id="cv" name="cv" accept=".pdf" required>
+
+        <!-- Tombol Aksi (Submit & Reset) -->
+        <div class="button-group">
+            <button type="submit" class="btn-submit">Daftar Sekarang</button>
+            <button type="reset" class="btn-reset">Reset / Isi Ulang</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
